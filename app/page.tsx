@@ -149,7 +149,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden border border-zinc-800">
                 <img
-                  src="/images/profile.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Agent11-1.JPG-EEGtHcXIhGk9siF41fnXYML7Y0cP2q.jpeg"
                   alt="Vedant Porwal"
                   className="w-full h-full object-cover"
                 />
