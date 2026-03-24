@@ -13,6 +13,7 @@ import { ScrollProgress } from "@/components/scroll-progress"
 import { SectionHeading } from "@/components/section-heading"
 import { GlassmorphicCard } from "@/components/glassmorphic-card"
 import { AnimatedButton } from "@/components/ui/animated-button"
+import SearchComponent from "@/components/ui/animated-glowing-search-bar"
 
 export default function Portfolio() {
   const handleResumeDownload = () => {
@@ -144,28 +145,17 @@ export default function Portfolio() {
           <SectionHeading title="About Me" subtitle="My background and journey" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
-            <div className="relative">
-              <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
-              <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D4E03AQEuwDKVR3OAYQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724262237662?e=1756944000&v=beta&t=0PQdqUvfTOLKphbtIsruvJQ56i8UYPQRANBJXCCzmvc"
-                  alt="Vedant Porwal"
-                  className="w-full h-full object-cover"
-                />
-
-                <div className="absolute bottom-0 left-0 w-full p-6">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                    <span className="text-sm font-medium">Available for work</span>
-                  </div>
-                </div>
-              </div>
+            <div className="flex justify-center items-center">
+              <SearchComponent />
             </div>
 
             <div className="space-y-6">
               <GlassmorphicCard>
                 <p className="text-lg text-zinc-300">
-                  I am a Third-year IT engineering student at Sal College of Engineering, deeply interested in software development. My passion lies in solving real-world problems through technology, and I have gained hands-on experience with Python, C++, and SQL. These skills have enabled me to work on various projects, from developing software applications to managing and analyzing data efficiently.
+                  I am a Third-year IT engineering student at Sal College of Engineering, deeply interested in software
+                  development. My passion lies in solving real-world problems through technology, and I have gained
+                  hands-on experience with Python, C++, and SQL. These skills have enabled me to work on various
+                  projects, from developing software applications to managing and analyzing data efficiently.
                 </p>
 
                 <p className="text-lg text-zinc-300 mt-4">
