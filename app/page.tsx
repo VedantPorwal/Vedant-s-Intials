@@ -145,8 +145,15 @@ export default function Portfolio() {
           <SectionHeading title="About Me" subtitle="My background and journey" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
-            <div className="flex justify-center items-center">
-              <SearchComponent />
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
+              <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D4E03AQEuwDKVR3OAYQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724262237662?e=1756944000&v=beta&t=0PQdqUvfTOLKphbtIsruvJQ56i8UYPQRANBJXCCzmvc"
+                  alt="Vedant Porwal"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
             <div className="space-y-6">
